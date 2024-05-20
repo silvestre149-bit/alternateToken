@@ -1,7 +1,7 @@
 {
+  "manifest_version": 1,
   "name": "Toggle Token Extension",
   "version": "1.0.0",
-  "manifest_version": 1,
   "description": "A custom extension to toggle between two tokens.",
   "script": "hhttps://silvestre149-bit.github.io/alternateToken/script.js"
 }
