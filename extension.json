@@ -4,7 +4,7 @@
   "manifest_version": 1,
   "action": {
     "title": "Toggle Token",
-    "icon": "/icon.svg",  // Opcional, você pode adicionar um ícone se quiser
+    "icon": "/icon.svg", 
     "popover": "/index.html",
     "height": 600,
     "width": 400
