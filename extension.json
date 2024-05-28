@@ -5,7 +5,7 @@
   "action": {
     "title": "Toggle Token",
     "icon": "/icon.svg", 
-    "popover": "alternateToken/index.html",
+    "popover": "/alternateToken/index.html",
     "height": 600,
     "width": 400
   }
