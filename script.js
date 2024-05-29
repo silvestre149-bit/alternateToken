@@ -1,3 +1,4 @@
+import OBR from "https://unpkg.com/@owlbear-rodeo/sdk@latest";
 OBR.onReady(() => {
     let currentTokenId = '9e098ab3-f059-44ad-be1c-e903c5877579';
     let tokenWithPatch = '9e098ab3-f059-44ad-be1c-e903c5877579';
