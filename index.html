@@ -4,10 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toggle Token</title>
-    <script src="https://unpkg.com/@owlbear-rodeo/sdk@latest"></script>
-    <script src="./script.js" defer></script>
+    <script type="module">
+        import OBR from "https://unpkg.com/@owlbear-rodeo/sdk@latest";
+
+        OBR.onReady(() => {
+            let currentTokenId = '9e098ab3-f059-4aad-be1c-e903c5877579';  // ID do token com tapa-olho
+            let tokenWithPatch = '9e098ab3-f059-4aad-be1c-e903c5877579';  // ID do token com tapa-olho
+            let tokenWithoutPatch = 'id-do-token-sem-tapa-olho';  // Substitua pelo ID do token sem tapa-olho
+
+            document.getElementById('toggleTokenButton').addEventListener('click', () => {
+                const newTokenId = currentTokenId === tokenWithPatch ? tokenWithoutPatch : tokenWithPatch;
+                OBR.assets.updateAsset({
+                    id: currentTokenId,
+                    assetId: newTokenId
+                });
+                currentTokenId = newTokenId;
+            });
+        });
+    </script>
 </head>
 <body>
     <button id="toggleTokenButton">Toggle Token</button>
 </body>
 </html>
+
